@@ -29,7 +29,7 @@ define(function (require, exports, module) {
     var prefs = PreferencesManager.getExtensionPrefs("theta");
     
     // set default preferences
-    prefs.definePreference( "shortcuts", "object", {OPT_T:"ϴ", 
+    var changeHandle = prefs.definePreference( "shortcuts", "object", {OPT_T:"ϴ", 
                                                     OPT_H:"hello world",
                                                     OPT_C:"console.log("},
                             { description: "Add shortcut as Key and what it types as the value" }
@@ -93,8 +93,9 @@ define(function (require, exports, module) {
     
     /* ************************************************
         Adds a listener for changes in preferences
+        
     */
-    prefs.on("change", function () {
+    changeHandle.on("change", function () {
         var shortcutsNow = prefs.get("shortcuts");
         var newShortcuts = {};
         
