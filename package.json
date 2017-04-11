@@ -1,0 +1,10 @@
+{
+    "name": "theta",
+    "title": "Typing Shortcuts",
+    "description": "Use shortcuts to type words and letters - (OPT_T: ϴ)",
+    "homepage": "https://github.com/pkelling/theta",
+    "version": "0.4.0",
+    "author": "Patrick Kelling",
+    "keywords": ["theta", "greek", "letters", "shortcuts","typing","ϴ","ß"],
+    "license": "MIT"
+}
