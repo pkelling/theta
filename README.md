@@ -1,5 +1,5 @@
 # theta
-Use shortcuts to type words and letters - ex: ϴ (OPT-T)
+Use shortcuts to type words and letters - (Ex: OPT_T => ϴ)
 
 
 To add shortcuts just open the user preferences file (Under Brackets or Debug Menus).
@@ -8,12 +8,13 @@ You will see this:
 
     "theta.shortcuts": {
         "OPT_T": "ϴ",
-        "OPT_H": "hello world"
+        "OPT_H": "hello world",
+        "OPT_C": "console.log("
     }
 
 This means that when you type OPT_T, it will print ϴ (theta);
 
-You can add any words or letter you want, I use it for greek letters in math.
+You can add any commands you want. (some shortcuts wont work)
 
 Notes:
 
