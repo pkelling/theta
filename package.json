@@ -5,6 +5,6 @@
     "homepage": "https://github.com/pkelling/theta",
     "version": "0.5.0",
     "author": "Patrick Kelling",
-    "keywords": ["theta", "greek", "letters", "shortcuts","typing","ϴ","ß"],
+    "keywords": ["theta", "greek", "letters", "shortcuts","typing","ϴ","ß","html","template"],
     "license": "MIT"
 }
