@@ -29,17 +29,32 @@ define(function (require, exports, module) {
     var prefs = PreferencesManager.getExtensionPrefs("theta");
     
     // set default preferences
-    var changeHandle = prefs.definePreference( "shortcuts", "object", {OPT_T:"ϴ", 
-                                                    OPT_H:"hello world",
+    var changeHandle = prefs.definePreference( "shortcuts", "object", {OPT_T:"ϴ",
+                                                    OPT_H: "hello world",
+                                                    CMD_OPT_CTRL_H: "html-template",
                                                     OPT_C:"console.log("},
-                            { description: "Add shortcut as Key and what it types as the value" }
+                            { description: "Add shortcut as Key and what it types as the value (except for html-template)" }
     );
     //object of shortcuts
     var shortcuts = prefs.get("shortcuts");
     
 
-    
-    
+    if(shortcuts.CMD_OPT_CTRL_H == "html-template"){
+shortcuts.CMD_OPT_CTRL_H = 
+`<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+</body>
+
+</html>`;
+    }
+
     
     /* ************************************************
         Adds Chars after cursor when shortcut is pressed
