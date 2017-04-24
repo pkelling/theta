@@ -1,7 +1,7 @@
 {
     "name": "theta",
     "title": "Typing Shortcuts",
-    "description": "Use shortcuts to type words and letters - (OPT_T: ϴ)",
+    "description": "Use shortcuts to type words and templates - (OPT_C: 'console.log(')",
     "homepage": "https://github.com/pkelling/theta",
     "version": "1.0.0",
     "author": "Patrick Kelling",
